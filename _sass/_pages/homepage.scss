@@ -4,8 +4,12 @@
 
 .homepage__hero-image {
     height: 500px;
-    background: url('http://place-puppy.com/1000x500') no-repeat;
-    background-size: cover;
+    overflow: hidden;
+    // background: url('') no-repeat;
+    // background-size: cover;
+    img {
+        width: 100%;
+    }
 }
 
 .homepage__hero-text {
@@ -44,4 +48,9 @@
         margin-top: 0;
         margin-bottom: $unit;
     }
+}
+
+.homepage__image-gallery {
+    margin-top: $unit * 10;
+    margin-bottom: $unit * 10;
 }

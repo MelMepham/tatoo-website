@@ -1,2 +1,6 @@
 sass:
   style: compact # possible values: nested expanded compact compressed
+
+collections:
+  photo_gallery:
+    output: false

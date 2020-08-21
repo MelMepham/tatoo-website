@@ -1,0 +1,7 @@
+<ul id="lightSlider">
+    {% for image in include.photo_gallery %}
+    <li class="photo-gallery__image">
+        <img class="photo-gallery__image" src="{{ image.image_path }}" alt="image.alt">
+    </li>
+    {% endfor %}
+  </ul>

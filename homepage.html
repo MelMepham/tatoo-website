@@ -1,12 +1,17 @@
 ---
-layout: default
+layout: photo-gallery
 title: homepage
 permalink: /
-
 show_update: true
+hero_image_path: /images/image3.jpeg
+hero_image_alt_text: Wooooowwww
 ---
+
 <div class="homepage__container">
-    <div class="homepage__hero-image"></div>
+    <div class="homepage__hero-image">
+        <img src={{page.hero_image_path}}>
+        <!-- {{page.hero_image_path}} -->
+    </div>
     <div class="l-container">
         <div class="homepage__hero-text">
             <h1>We are the crab people</h1>
@@ -32,5 +37,8 @@ show_update: true
                 </p>
             </div>
         </div>
+    </div>
+    <div class="l-container homepage__image-gallery">
+        {% include /photo-gallery.html photo_gallery=site.photo_gallery %}
     </div>
 </div>

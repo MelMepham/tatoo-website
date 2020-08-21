@@ -9,11 +9,14 @@
 
 .default__logo-container {
     display: inline-flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    overflow: hidden;
 }
 
 .default__logo {
-    border-radius: 100%;
-    min-height: 50px;
+   width: 50px;
 }
 
 .default__nav-link-container {
