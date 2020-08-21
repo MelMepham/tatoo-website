@@ -2,5 +2,9 @@ sass:
   style: compact # possible values: nested expanded compact compressed
 
 collections:
-  photo_gallery:
-    output: false
+  - photo_gallery
+  - artist_profile
+  - artist_profile_images
+
+plugins:
+  - jekyll-seo-tag

@@ -1,12 +1,11 @@
 $(document).ready(function() {
-    $("#lightSlider").lightSlider({
-      // gallery: true,
-      item: 5,
-      // loop: true,
-      // slideMargin: 0,
-      autoWidth: true,
-      autoHeight: true,
-      currentPagerPosition: 'bottom',
-      loop: true
-    });
+    $(".lightSlider").each(function() {
+      jQuery(this).lightSlider({
+          item: 5,
+          autoWidth: true,
+          autoHeight: true,
+          currentPagerPosition: 'bottom',
+          loop: true
+        });
+    })
   });

@@ -4,10 +4,30 @@ description:
 image:
 
 navigation_weight: 2
-layout: default
+layout: photo-gallery
 logo_image_path: /images/image7.jpeg
 ---
 
 <div class="l-container">
     <h1>Artists</h1>
+
+    {% for p in site.artist_profile %}
+        {% assign my_array = "" | split: ',' %}
+        {{p.name}}
+
+        {% for image in site.artist_profile_images %}
+            {% if image.artist contains p.name %}
+                {% assign my_array = my_array | push: image %}
+            {% endif %}
+            
+            {% for item in my_array %}
+            {% endfor %}
+        {% endfor %}
+    <div>
+        {% include /photo-gallery.html photo_gallery=my_array %}
+    </div>
+
+    {% endfor %}
+
+
 </div>
