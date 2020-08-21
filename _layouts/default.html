@@ -1,5 +1,4 @@
 ---
-
 ---
 
 <!doctype html>
@@ -9,22 +8,44 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="/stylesheets/main.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav class="main-nav">
+    <header class="default__header-container">
+      <div class="l-container-wide">
+        <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog.html">Blog</a></li>
+            <div class="default__logo-container">
+              <li>
+                <a href="/">
+                  <img class="default__logo" src="http://place-puppy.com/50x50" alt="Home link">
+                </a>
+              </li>
+            </div>
+
+            <div class="default__nav-link-container">
+              {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+              {% for p in navigation_pages %}
+              {% if p.navigation_weight %}
+              <li>
+                <a
+                  href={{p.url}} {% if p.url == page.url %} class="active" {% endif %}>
+                {{ p.title | upcase }}
+              </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </div>
           </ul>
         </nav>
-        <h1><a href="/">Bakery<strong>Store</strong></a></h1>
       </div>
     </header>
+    <div>
+      {{ content }}
+    </div>
     <footer>
-      <div class="container">
-        <p class="center-text"> <a href="http://cloudcannon.com">Created by CloudCannon</a></p>
+      <div class="l-container-wide">
       </div>
     </footer>
   </body>

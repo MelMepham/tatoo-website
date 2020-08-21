@@ -1,0 +1,39 @@
+.default__header-container {
+    ul {
+        display: flex;
+    }
+    li {
+        display: inline-flex;
+    }
+}
+
+.default__logo-container {
+    display: inline-flex;
+}
+
+.default__logo {
+    border-radius: 100%;
+    min-height: 50px;
+}
+
+.default__nav-link-container {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: bottom;
+
+    li {
+        padding-top: $unit;
+        padding-right: $unit * 2;
+        padding-left: $unit * 2;
+
+        a {
+            margin-top: auto;
+            border-bottom: 5px solid white;
+        }
+
+        a.active {
+            border-bottom: 5px solid $main-blue;
+        }
+    }
+}

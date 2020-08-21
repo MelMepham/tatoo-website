@@ -1,0 +1,36 @@
+---
+layout: default
+title: homepage
+permalink: /
+
+show_update: true
+---
+<div class="homepage__container">
+    <div class="homepage__hero-image"></div>
+    <div class="l-container">
+        <div class="homepage__hero-text">
+            <h1>We are the crab people</h1>
+            <p>
+                This is where we go to do all the things.
+            </p>
+        </div>
+    </div>
+    <div {% unless page.show_update %} class="hide" {% endunless %}
+        class="homepage_important-update-container">
+        <div class="l-container homepage_important-update-text">
+            <div
+                aria-live="assertive"
+                class="homepage__important_update-header">
+                Update: You should probably read me.
+            </div>
+            <div class="homepage__important_update-body-text">
+                <p>
+                    Crab people are not around today..
+                </p>
+                <p>
+                    Maybe come back again tomorrow and you will have better luck.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
