@@ -1,10 +1,33 @@
 ---
 title: Contact
+description:
+image:
+
 navigation_weight: 3
 layout: default
 logo_image_path: /images/image7.jpeg
 ---
 
-<div class="l-container">
+<div class="l-container-small">
     <h1>Contact us</h1>
+    <p>
+        Here is some information about all of the things you might need to contact us about probably a good idea to put the contact details on this page
+    </p>
+        <form>
+            <div class="contact__form-field">
+                <label for="firstName">Name</label>
+                <input type="text" name="firstName"> 
+            </div>
+            <div class="contact__form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email"> 
+            </div>
+            <div class="contact__form-field">
+                <label for="message">Message</label>
+                <textarea type="text" name="Message"></textarea>
+            </div>
+            <div class="contact__form-field">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
 </div>

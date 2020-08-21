@@ -16,18 +16,19 @@ a {
     color: initial;
 }
 
+.l-container-small {
+    max-width: 600px;
+    @include layout;
+}
+
 .l-container {
     max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    // background-color: pink;
+    @include layout;
 }
 
 .l-container-wide {
     max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
-    // background-color: pink;
+    @include layout;
 }
 
 .hide {

@@ -6,8 +6,7 @@ $(document).ready(function() {
       // slideMargin: 0,
       autoWidth: true,
       autoHeight: true,
-      currentPagerPosition: 'middle',
-
-      // verticalHeight: 20,
+      currentPagerPosition: 'bottom',
+      loop: true
     });
   });
