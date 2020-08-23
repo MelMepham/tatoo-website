@@ -1,12 +1,12 @@
 monday:
-  - opening_time:
-  - closing_time:
+  - opening_time: '8:04 am'
+  - closing_time: '8:04 pm'
 tuesday:
-  - opening_time:
-  - closing_time:
+  - opening_time: '8:04 am'
+  - closing_time: '8:04 pm'
 wednesday:
-  - opening_time:
-  - closing_time:
+  - opening_time: '8:04 am'
+  - closing_time: '8:04 pm'
 thursday:
   - opening_time:
   - closing_time:
