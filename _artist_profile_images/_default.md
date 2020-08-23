@@ -1,5 +1,6 @@
 ---
-artist_profile:
+collections:
+  - artist_profile
 image_path:
 alt_text:
 ---
