@@ -6,6 +6,10 @@ image:
 navigation_weight: 3
 layout: default
 logo_image_path: /images/image7.jpeg
+
+map_latitude: 45.8787605
+map_longitude: 170.5027976
+map_zoom: 10
 ---
 
 <div class="l-container-small">
@@ -31,5 +35,7 @@ logo_image_path: /images/image7.jpeg
             </div>
         </form>
 
-        {% include /google-map.html latitude=-45.8787605 longitude=170.5027976 zoom=5 %}
+        {% include /opening-hours.html %}
+
+        {% include /google-map.html latitude=page.map_latitude longitude=page.map_longitude zoom=page.map_zoom %}
 </div>

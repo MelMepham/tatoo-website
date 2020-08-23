@@ -7,5 +7,5 @@ collections:
   - artist_profile_images
 
 plugins:
-  - jekyll-seo-tag
+  - jekyll-seo-tag 
   - jekyll-environment-variables
