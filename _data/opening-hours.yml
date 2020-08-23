@@ -1,14 +1,14 @@
-mon_opening_time: 
-mon_closing_time: 
-tues_opening_time: 
-tues_closing_time: 
-wed_opening_time: 
-wed_closing_time: 
-thurs_opening_time: 
-thurs_closing_time: 
-fri_opening_time: 
-fri_closing_time: 
-sat_opening_time: 
-sat_closing_time: 
-sun_opening_time: 
-sun_closing_time: 
+mon_opening_time: '8:00am'
+mon_closing_time: '6:00pm'
+tues_opening_time: '8:00am'
+tues_closing_time: '6:00pm'
+wed_opening_time: '8:00am'
+wed_closing_time: '6:00pm'
+thurs_opening_time: '8:00am'
+thurs_closing_time: '6:00pm'
+fri_opening_time: '8:00am'
+fri_closing_time: '6:00pm'
+sat_opening_time:
+sat_closing_time:
+sun_opening_time:
+sun_closing_time:
