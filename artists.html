@@ -16,7 +16,7 @@ logo_image_path: /images/image7.jpeg
         {{p.name}}
 
         {% for image in site.artist_profile_images %}
-            {% if image.artist contains p.name %}
+            {% if image.artist_profile contains p.name %}
                 {% assign my_array = my_array | push: image %}
             {% endif %}
             
