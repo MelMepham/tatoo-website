@@ -1,0 +1,33 @@
+[{
+    "day": "Monday",
+    "opening_time": "8:04 pm",
+    "closing_time": "8:04 pm"
+},
+{
+  "day": "Tuesday",
+  "opening_time": "8:04 am",
+  "closing_time": "8:04 pm"
+},
+{
+  "day": "Wednesday",
+  "opening_time": "8:04 am",
+  "closing_time": "8:04 pm"
+},
+{
+  "day": "Thursday",
+  "opening_time": "8:04 am",
+  "closing_time": "8:04 pm"
+},
+{
+  "day": "Friday",
+  "opening_time": "8:04 am",
+  "closing_time": "8:04 pm"
+},
+{
+  "day": "Saturday",
+  "opening_time": "8:04 am",
+  "closing_time": "8:04 pm"
+},
+{
+  "day": "Sunday"
+}]
