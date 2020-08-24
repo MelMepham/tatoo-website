@@ -10,5 +10,11 @@
         width: 100%;
         margin-bottom: $unit * 2;
         margin-top: $unit / 2;
+        border: 1px solid black;
     }
+
+    .form__error {
+        border: 2px solid $error;
+    }
+
 }

@@ -4,12 +4,12 @@ description:
 image:
 
 navigation_weight: 3
-layout: default
+layout: contact
 logo_image_path: /images/image7.jpeg
 
-map_latitude: 45.8787605
-map_longitude: 170.5027976
-map_zoom: 10
+map_latitude: 41.2769
+map_longitude: 174.7731
+map_zoom: 15
 ---
 
 <div class="l-container-small">
@@ -17,23 +17,32 @@ map_zoom: 10
     <p>
         Here is some information about all of the things you might need to contact us about probably a good idea to put the contact details on this page
     </p>
-        <form>
+        <form id="contactForm">
             <div class="contact__form-field">
-                <label for="firstName">Name</label>
-                <input type="text" name="firstName"> 
+                <label for="firstName">Name *</label>
+                <input id="firstName" type="text" name="firstName" required> 
             </div>
             <div class="contact__form-field">
-                <label for="email">Email</label>
-                <input type="email" name="email"> 
+                <label for="email">Email *</label>
+                <input id="email" type="email" name="email" required> 
             </div>
             <div class="contact__form-field">
-                <label for="message">Message</label>
-                <textarea type="text" name="Message"></textarea>
+                <label for="phoneNumber">Phone number</label>
+                <input type="number" name="phoneNumber"> 
+            </div>
+            <div class="contact__form-field">
+                <label for="message">Message *</label>
+                <textarea id="message" type="text" name="Message" required></textarea>
             </div>
             <div class="contact__form-field">
                 <input type="submit" value="Submit">
             </div>
+            <!-- <button class="g-recaptcha" 
+                data-sitekey="reCAPTCHA_site_key" 
+                data-callback='onSubmit' 
+                data-action='submit'>Submit</button> -->
         </form>
+        <div id="contact__error"></div>
 
         {% include /opening-hours.html %}
 

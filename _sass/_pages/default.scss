@@ -1,10 +1,23 @@
 .default__header-container {
+    border-bottom: 10px solid $blue;
+    background-color: $light-green;
+
     ul {
         display: flex;
+        align-items: flex-end;
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
     }
+
     li {
         display: inline-flex;
     }
+}
+.default__image-container {
+    padding-top: $unit * 4;
+    background-color: $light-green !important;
+
 }
 
 .default__logo-container {
@@ -13,6 +26,13 @@
     min-width: 50px;
     border-radius: 100%;
     overflow: hidden;
+    margin-bottom: $unit * 2;
+
+    a {
+        z-index: 1;
+        height: 50px;
+        width: 50px;
+    }
 }
 
 .default__logo {
@@ -20,6 +40,17 @@
     height: 50px;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+
+.default__nav-name {
+    display: flex;
+    text-align: bottom;
+    padding: $unit $unit * 2 0 $unit * 2;
+    font-size: 20px;
+    color: $blue;
+    padding-bottom: $unit * 2;
+
 }
 
 .default__nav-link-container {
@@ -27,6 +58,9 @@
     justify-content: flex-end;
     width: 100%;
     text-align: bottom;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
     li {
         padding-top: $unit;
@@ -34,13 +68,28 @@
         padding-left: $unit * 2;
 
         a {
+            color: $blue;
             text-align: right;
             margin-top: auto;
-            border-bottom: 5px solid white;
+            border-bottom: $unit solid $light-green;
+            padding: $unit;
         }
 
         a.active {
-            border-bottom: 5px solid $main-blue;
+            color: $light-green;
+            border-bottom: $unit solid $blue;
+            background-color: $blue;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
         }
     }
+}
+
+//Footer
+footer {
+    border-top: 10px solid $blue;
+    background-color: $light-green;
+    padding-top: $unit * 3;
+    padding-bottom: $unit * 3;
+    width: 120%;
 }

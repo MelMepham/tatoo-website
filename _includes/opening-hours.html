@@ -1,10 +1,19 @@
 <h2>Opening hours</h2>
 
-{% for item in site.data.opening-hours %}
-<h3>{{item.day}}</h3>
-    {% if item.opening_time && item.closing_time %}
-        <p>Opening: {{item.opening_time}} – {{item.closing_time}}</p>
-    {% else %}
-        <p>Closed</p>
-    {% endif %}
-{% endfor %}
+<table>
+    {% for item in site.data.opening-hours %}
+    <tr>
+        <td>{{item.day}}</td>
+        {% if item.opening_time && item.closing_time %}
+        <td>
+            {{item.opening_time}} – {{item.closing_time}}
+        </td>
+            {% else %}
+            <td>
+                Closed
+            </td>
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>

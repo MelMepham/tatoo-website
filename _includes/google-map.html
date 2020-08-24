@@ -4,15 +4,8 @@
 
   function initMap() {
     var myOptions = {
-      scrollwheel: false,
-      draggable: false,
-      panControl: false,
-      disableDefaultUI: true,
       zoom: window.mapData.zoom,
-      maxZoom: window.mapData.zoom,
-      minZoom: window.mapData.zoom,
       center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
     var map = new google.maps.Map(document.getElementById('map'), myOptions);
@@ -27,4 +20,4 @@
     });
   }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlASG3OZyn_Yqvx3eflCxIuITKMfYq6WU&amp;callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{site.env.GOOGLE_API}}&amp;callback=initMap"></script>
