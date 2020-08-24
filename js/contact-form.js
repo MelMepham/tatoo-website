@@ -1,12 +1,13 @@
 window.onload = function(){
 
+    const contactSubmit = document.getElementById('contactSubmit');
     const form = document.getElementById('contactForm');
 
     const firstName = document.getElementById('firstName');
     const email = document.getElementById('email');
     const message = document.getElementById('message');
 
-     form.addEventListener('click', (event) => {
+    contactSubmit.addEventListener('click', (event) => {
         const errorMessage = "Something went wrong, please try again";
 
         if (!form.checkValidity()) {

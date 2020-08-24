@@ -85,6 +85,11 @@
     }
 }
 
+//Content
+.default__content {
+    padding-bottom: 260px;
+}
+
 //Footer
 footer {
     border-top: 10px solid $blue;
@@ -92,4 +97,8 @@ footer {
     padding-top: $unit * 3;
     padding-bottom: $unit * 3;
     width: 120%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
 }
